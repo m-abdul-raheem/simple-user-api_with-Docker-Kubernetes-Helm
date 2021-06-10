@@ -32,7 +32,7 @@ $ curl localhost:443/users/1
 
 ## Starting services
 
-###Deploying using Binary
+### Deploying using Binary
 
 Make sure you have Go setup on your system.
 Clone this repository.
