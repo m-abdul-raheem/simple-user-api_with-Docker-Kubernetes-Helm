@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+  users:
+    build: ./users
+    command:
+      - "-mongoURI"
+      - "mongodb://mongodb:27017/"
+    ports:
+      - target: 443
+        published: 443
+        protocol: tcp
+        mode: host
+
+  mongodb:
+    image: mongo:4.2.11
+    volumes:
+      - ./mongodata:/data/db

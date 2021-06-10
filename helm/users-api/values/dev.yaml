@@ -1,0 +1,6 @@
+var1: value1
+var2: value2
+host: example.com
+EnvironmentConfig:
+  var3: value3
+  var4: value4

@@ -1,0 +1,7 @@
+apiVersion: v3
+name: users-api
+description: A Helm chart for Kubernetes
+
+type: application
+
+version: CHART_VERSION

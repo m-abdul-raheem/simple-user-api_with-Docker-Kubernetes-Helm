@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: users-api
+  namespace: main-namespace
+  labels:
+    app: users-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: users-api
+  template:
+    metadata:
+      labels:
+        app: users-api
+    spec:
+      containers:
+      - name: users-api
+        image: imageURL
+        envFrom:
+          - configMapRef:
+              name: users-api
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 443
+        resources:
+          limits:
+            memory: "8Gi"
+            cpu: "2"
+          requests:
+            memory: "7Gi"
+            cpu: "1"
