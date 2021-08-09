@@ -10,7 +10,7 @@ Once the API have started, you can access it through the following link: <http:/
 
 Insert User
 ```bash
-$ curl -i -H "Content-Type: application/json" -X POST localhost:443/users/ -d '{"name":"Foo Barrington","id":1}
+$ curl -i -H "Content-Type: application/json" -X POST localhost:443/users/ -d '{"name":"Foo Barrington","id":1}'
 
 HTTP/1.1 200 OK
 ```
