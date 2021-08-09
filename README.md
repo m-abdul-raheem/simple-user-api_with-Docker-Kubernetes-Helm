@@ -8,6 +8,9 @@ Once the API have started, you can access it through the following link: <http:/
 
 ## Examples of functionalities
 
+You can use Postman API Tool or other tools, on windows/linux/mac.
+I'm using curl on linux as basic examples.
+
 Insert User
 ```bash
 $ curl -i -H "Content-Type: application/json" -X POST localhost:443/users/ -d '{"name":"Foo Barrington","id":1}'
@@ -32,7 +35,7 @@ $ curl localhost:443/users/1
 
 ## Starting services
 
-###Deploying using Binary
+### Deploying using Binary
 
 Make sure you have Go setup on your system.
 Clone this repository.
